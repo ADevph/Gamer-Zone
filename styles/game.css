@@ -161,74 +161,25 @@
   }
 
   /* online container */
-
-.cards{
-  display: flex;
-  justify-content: center;
-  gap: 15px;
- margin-left: 180px;
- margin-right: 180px;
-}
-
-.section-center{
-  color: #534C64;
-text-align: center;
-font-family: Work Sans;
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
-
-}
-
-.card-img:hover{
-  border-radius: 16px;
-background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-border: 1.75px solid  #fb0b87;
-
-}
-
-.text-center{
+  .section-center{
+    color: #534C64;
   text-align: center;
-  font-size: 3rem;
-}
-.text-gradient{
-  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-family: Work Sans;
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-
-
-
-
-
-
-/* card releted style */
-
-.card-containar{
-  display:flex;
-  justify-content: center;
-  gap: 24px;
-  
-}
-.card-section-title{
-  text-align: center;
-  margin-top: 100px;
-}
-.card-title{
-  
-  color: #534C64;
-
+  font-family: Work Sans;
   font-size: 1rem;
-
-}
-.card-title span{
-  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  font-style: normal;
+  font-weight: 400;
+  
+  }
+  
+  
+  
+  
+  .text-center{
+    text-align: center;
+    font-size: 3rem;
+  }
+  .text-gradient{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -237,73 +188,68 @@ line-height: normal;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
-.card-des{
-  color: #534C64;
-text-align: center;
-font-size: 18px;
-font-weight: 400;
-line-height: 30px; 
-margin-bottom: 48px;
-}
+  }
+  .card-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+  .card {
+    position: relative;
+    width: 250px;
+    height: 300px;
+  }
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .game-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-image-text {
+    color: #534c64;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+  }
+  .hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 283px;
+    background: rgba(0, 0, 0, 0.664);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    border: 5px solid #ff42a5;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .centered-text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 10px;
+  }
+  .card:hover .hover-content {
+    opacity: 1;
+  }
+  
 
-.card-content h6{
-  width: 342px;
-  color: #534C64;
-font-size: 20px;
-font-weight: 500;
-line-height: 30px; 
-}
-
-.card-content img:hover{
-  border: 8px solid #F948B2;
-  transform:  scale(1.1);
-  transition: all 1s linear 0.5s;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-/* rectangle-section releted style */
-
-.rectangle-section{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  margin-top: 120px;
-
-}
-.rectangle-section h1{
-  text-align: right;
-font-size: 48px;
-font-weight: 700;
-line-height: 60px; 
-}
-
-.rectangle-section span{
-background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-.rectangle-section p{
-  width: 353px;
-  color: #534C64;
-text-align: right;
-font-size: 18px;
-font-weight: 400;
-line-height: 30px; 
-}
-.box-img{
-  position: relative;
-  bottom: 200px;
-  right: 150px;
-  max-width: 318.5px;
-height: 365.083px;
-border-radius: 8px;
-border: 10px solid #FFF;
-background: url(<path-to-image>), lightgray 0px -0.304px / 100% 117.229% no-repeat;
-}
 
 .game-section{
   display: flex;
@@ -349,6 +295,47 @@ background: url(<path-to-image>), lightgray 0px -0.304px / 100% 117.229% no-repe
 }
 
 
+/* rectangle-section */
+
+.rectangle-section{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 120px;
+  
+}
+.rectangle-section h1{
+  text-align: right;
+font-size: 48px;
+font-weight: 700;
+line-height: 60px; 
+}
+
+.rectangle-section span{
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.rectangle-section p{
+  width: 353px;
+  color: #534C64;
+text-align: right;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px; 
+}
+.box-img{
+  position: relative;
+  bottom: 200px;
+  right: 150px;
+  max-width: 318.5px;
+height: 365.083px;
+border-radius: 8px;
+border: 10px solid #FFF;
+background:  lightgray;
+}
 
 
   /* foooter */
