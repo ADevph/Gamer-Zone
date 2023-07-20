@@ -21,10 +21,10 @@
   justify-content: flex-start;
   align-items: center;
   width: 50%;
-  gap: 20px;
+  gap: 15px;
 }
 .nav-logo img {
-  width: 86.041px;
+  width: 85px;
   height: 40px;
 }
 .nav-logo h2 {
@@ -232,9 +232,9 @@
   }
   .watch-text {
     text-align: center;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 600;
-    background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+    background:  #ff42a5;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -305,7 +305,7 @@ line-height: 60px;
 }
 
 .rectangle-section span{
-background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background: #F948B2;
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -403,7 +403,7 @@ gap: 60px;
 
   }
 
-  .another-navnav{
+  .another-nav{
     margin-top: 5px;
    
   }
