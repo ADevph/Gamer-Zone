@@ -393,10 +393,7 @@ background:  lightgray;
     display: flex;
     gap: 1rem;
   }
-.social-icon{
-    width: 30px;
-    height: 30px;
-}
+
   .another-nav .nav-list .nav-item {
     
 display: inline-flex;
