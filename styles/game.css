@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@400;600;700;800&display=swap");
 
 /* shared styles */
 
-  * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Work Sans', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
-
 
 /* header */
 
@@ -73,9 +72,7 @@
   cursor: pointer;
 }
 
-
 /* banner section */
-
 
 .banner-container {
   margin-bottom: 150px;
@@ -89,9 +86,14 @@
   background-position-x: left;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
-.banner-img img {
-  width: 700px;
+
+.banner-img {
+  max-width: 100%;
 }
+.banner-content {
+  text-align: center;
+}
+
 .banner-text h2 {
   color: #0b0223;
   font-size: 48px;
@@ -108,7 +110,7 @@
   -webkit-text-fill-color: transparent;
   padding-bottom: 10px;
 }
-.banner-inside-text{
+.banner-inside-text {
   display: flex;
   gap: 10px;
   padding-bottom: 10px;
@@ -149,32 +151,27 @@
   margin-top: 20px;
 }
 
+/* online container */
 
-  /* online container */
-
-.online-container{
+.online-container {
   margin-bottom: 150px;
 }
 
-  .section-center{
-    color: #534C64;
+.section-center {
+  color: #534c64;
   text-align: center;
   font-family: Work Sans;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  
-  }
-  
-  
-  
-  
-  .text-center{
-    text-align: center;
-    font-size: 3rem;
-  }
-  .gradient{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+}
+
+.text-center {
+  text-align: center;
+  font-size: 3rem;
+}
+.gradient {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -183,70 +180,70 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  }
-  .card-section {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 40px;
-    padding-bottom: 100px;
-  }
-  .card {
-    position: relative;
-    width: 250px;
-    height: 300px;
-  }
-  .image-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  .game-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .card-image-text {
-    color: #534c64;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 30px;
-    text-align: center;
-  }
-  .content-hovering {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 240px;
-    height: 283px;
-    background: rgba(0, 0, 0, 0.664);
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.3s ease;
-    border: 5px solid #ff42a5;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  .watch-text {
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    background:  #ff42a5;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-top: 10px;
-  }
-  .card:hover .content-hovering {
-    opacity: 1;
-  }
-  
+}
+.card-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.card {
+  position: relative;
+  width: 250px;
+  height: 300px;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.game-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-image-text {
+  color: #534c64;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+.content-hovering {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 283px;
+  background: rgba(0, 0, 0, 0.664);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  border: 5px solid #ff42a5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.watch-text {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #ff42a5;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 10px;
+}
+.card:hover .content-hovering {
+  opacity: 1;
+}
+
 /* game */
 
-.game-section{
+.game-section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -255,7 +252,7 @@
   cursor: pointer;
 }
 
-.box{
+.box {
   justify-content: center;
   display: flex;
   align-items: center;
@@ -263,10 +260,10 @@
   height: 70px;
   gap: 20px;
   border-radius: 50px;
-  background: #FFF;
+  background: #fff;
 }
 
-.box-arcade{
+.box-arcade {
   justify-content: center;
   display: flex;
   width: 200px;
@@ -274,289 +271,373 @@
   align-items: center;
   gap: 10px;
   border-radius: 50px;
-  background: #FFF;
-  border: 1.5px solid  #fb0b87;
+  background: #fff;
+  border: 1.5px solid #fb0b87;
 }
 
-.box:hover{
-
+.box:hover {
   border-radius: 50px;
-  background: #FFF;
-  border: 1.5px solid  #fb0b87;
- 
+  background: #fff;
+  border: 1.5px solid #fb0b87;
 }
-
 
 /* rectangle-section */
 
-.rectangle-section{
+.rectangle-section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
   margin-top: 120px;
-  
-}
-.rectangle-section h1{
-  text-align: right;
-font-size: 48px;
-font-weight: 700;
-line-height: 60px; 
 }
 
-.rectangle-section span{
-background: #F948B2;
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.rectangle-section h1 {
+  text-align: right;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
 }
-.rectangle-section p{
+
+.rectangle-section span {
+  background: #f948b2;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.rectangle-section p {
   width: 353px;
-  color: #534C64;
-text-align: right;
-font-size: 18px;
-font-weight: 400;
-line-height: 30px; 
+  color: #534c64;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
 }
-.box-img{
+.box-img {
   position: relative;
   bottom: 200px;
   right: 150px;
   max-width: 318.5px;
-height: 365.083px;
-border-radius: 8px;
-border: 10px solid #FFF;
-background:  lightgray;
+  height: 365.083px;
+  border-radius: 8px;
+  border: 10px solid #fff;
+  background: lightgray;
 }
 
+/* foooter */
 
-  /* foooter */
-
-  footer {
+footer {
   background-color: #0b0223;
-    
-  }
+}
 
-  .footer container{
-  margin-top: 60px; 
+.footer container {
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0px 10px;
+}
 
-  }
+.white-text {
+  color: white;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.nav-logo-footer {
+  display: inline-flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  margin-top: 100px;
+}
 
-  .white-text{
-    color: white;
-  }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-  }
-.nav-logo-footer{
+.nav-logo-footer p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.nav-list {
+  display: inline-flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 60px;
+}
+.footer-nav .nav-list .nav-item {
+  margin: 0 1.5rem;
+}
+.footer-nav .nav-list .nav-item a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 66px;
+}
+.social-icons {
+  justify-content: center;
+  /* max-width: 50px; */
+  display: flex;
+  gap: 1rem;
+}
 
-    display: inline-flex;
-    padding: 10px;
-    align-items: center;
-    gap: 10px;
-    margin-top: 100px;
+.another-nav .nav-list .nav-item {
+  display: inline-flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.another-nav {
+  margin-top: 5px;
+}
+.another-nav .nav-list .nav-item a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.copy {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+
+  margin-bottom: 80px;
+}
+.copyright-text {
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 
-.nav-logo-footer p {
+
+/* responsive mobile - 576 */
+
+
+
+@media screen and (max-width: 576px) {
+  .header-nav-container {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 1.50rem;
-    font-weight: 700;
- 
+    gap: 20px;
+
+    margin-right: 10px;
   }
-  .nav-list{
-    display: inline-flex;
-    padding: 10px;
-    align-items: flex-start;
-    gap: 60px;
+  .nav-logo,
+  .nav-logo-footer {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin: 0 auto;
   }
-  .footer-nav .nav-list .nav-item {
-    margin: 0 1.5rem;
+  .nav-button {
+    margin: 0px 15px;
+    max-width: 300px;
   }
-  .footer-nav .nav-list .nav-item a {
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 66px;
+  .nav-menus {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 10px;
+    gap: 10px;
   }
-  .social-icons {
-  justify-content: center;
-    /* max-width: 50px; */
+
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+  .banner-img img {
+    margin: 0 auto;
+    width: 400px;
+    height: 440px;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-content {
+    margin-top: 20px;
+  }
+
+  .banner-inside-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .btnS, .btnG {
+    justify-content: center;
+    width: 50%;
+    margin-right: 8px;
+  }
+  .btnG {
+    margin-right: 25px;
+    margin-bottom: 10px;
+  }
+
+  .card-section {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .game-image-container {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .another-nav .nav-list .nav-item {
-    
-display: inline-flex;
-padding: 10px;
-align-items: flex-start;
-gap: 60px;
-
+  .card {
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
   }
 
-  .another-nav{
-    margin-top: 5px;
-   
+  .watch-text {
+    font-size: 14px;
   }
-  .another-nav .nav-list .nav-item a {
-    color: rgba(255, 255, 255, 0.6);
+
+  .card-image-text {
+    margin-top: 10px;
     font-size: 1rem;
-    font-weight: 500;
   }
-  
-  .copy{
-    margin-bottom: 80px;
+
+  .text-center {
+    text-align: center;
+    font-size: 3rem;
   }
-  .copyright-text {
+  .card:hover .content-hovering {
+    opacity: 1;
+  }
+
+  .rectangle-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .rectangle-section h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .rectangle-section span {
+    background: #f948b2;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .rectangle-section p {
+    width: 100%;
+    color: #534c64;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 100px;
+  }
+
+  .ractangle-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  .ractangle-img img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    border: 8px solid #fff;
+    background: lightgray;
+    margin-left: 15px;
+  }
+
+  .game-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    margin-bottom: 100px;
+  }
+
+  .box-arcade {
+    width: 100%;
+    font-size: 0.8rem;
+    height: 65px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1rem;
-    font-weight: 500;
+    border-radius: 100px;
+    background: #fff;
   }
 
-  /* responsive maxwidth- 576 */
+  .box {
+    font-size: 0.75rem;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+  .box-arcade {
+    border: 2px solid #fb0b87;
+  }
 
+  .box, .box-arcade {
+    max-width: 100%;
+  }
 
-  @media screen and (max-width: 576px) {
-    .nav-container,
-    .banner-container,
-    .nav-menus {
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .banner-container {
-      gap: 50px;
-    }
-    .header-nav-container {
-      padding: 0;
-    }
-    .nav-menus {
-      gap: 10px;
-      padding: 20px 0;
-    }
-    .nav-logo {
-      padding-top: 20px;
-      justify-content: center;
-      align-items: center;
-    }
-    .nav-icon {
-      margin-top: 20px;
-    }
-    .nav-button {
-      flex-direction: column;
-    }
-    .banner-img img {
-      width: 100%;
-    }
+  .nav-logo-footer {
+    margin-top: 60px;
+  }
 
-    /* card section */
+  .footer-nav .nav-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+  .social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+  }
 
-    .card-section {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 80px;
-      padding-top: 20px;
-    }
-    .on-game-top h1 {
-      font-size: 30px;
-      padding-top: 50px;
-      padding-bottom: 10px;
-    }
-    .online-game-title {
-      font-size: 30px;
-    }
-    .on-game-top p {
-      font-size: 15px;
-    }
-    .rectangle-section{
-      flex-direction: column-reverse;
-      gap: 20px;
-      padding: 0;
-      margin: 0 auto;
-    }
-    
-    .rectangle-img {
-      padding-right: 10px;
-    }
-    .rectangle-section h1,
-    .rectangle-section p {
-      align-items: center;
-      justify-content: center;
-      width: auto;
-      padding: 20px 0;
-    }
-    .frstimg {
-      width: 310px;
-      height: 270px;
-      border-radius: 8px;
-    }
-    .box-img {
-      
-      position: relative;
-      width: 130px;
-      height: 150px;
-      right: 0px;
-      left: 0px;
-      top: -120px;
-     
-      border-radius: 8px;
-    }
-    .game-section {
-      flex-wrap: wrap;
-      gap: 1rem;
-      padding: 2rem;
-    }
-    .box, .box-arcade{
-      flex-basis: calc(33.33% - 1rem);
-    }
-    .image-container {
-      width: 100px;
-      gap: 5px;
-    }
-   
-    .fmenus {
-      display: flex;
-      width: 350px;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding-left: 30px;
-    }
-    .social-icon {
-      align-items: center;
-      gap: 20px;
-    }
-    .footer-link {
-      flex-wrap: wrap;
-    }
-    ul li a {
-      margin-left: 15px;
-    }
-    .footer-link ul li a {
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-      
-      
-    }
+  .another-nav .nav-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+  }
 
-
-
-
-
-  
+  .copy {
+    white-space: normal;
+  }
+}
