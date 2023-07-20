@@ -104,7 +104,7 @@
   font-size: 95px;
   font-weight: 800;
   text-transform: uppercase;
-  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background: #f948b2;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -131,7 +131,7 @@
   padding: 18px 40px;
   align-items: flex-start;
   border-radius: 48px;
-  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background:#ff42a5;
   border: 0;
   cursor: pointer;
 }
@@ -323,7 +323,7 @@
   background: lightgray;
 }
 
-/* foooter */
+/* foooter section */
 
 footer {
   background-color: #0b0223;
@@ -413,11 +413,7 @@ footer {
   font-weight: 500;
 }
 
-
-
 /* responsive mobile - 576 */
-
-
 
 @media screen and (max-width: 576px) {
   .header-nav-container {
@@ -473,7 +469,8 @@ footer {
     margin-bottom: 10px;
   }
 
-  .btnS, .btnG {
+  .btnS,
+  .btnG {
     justify-content: center;
     width: 50%;
     margin-right: 8px;
@@ -602,7 +599,8 @@ footer {
     border: 2px solid #fb0b87;
   }
 
-  .box, .box-arcade {
+  .box,
+  .box-arcade {
     max-width: 100%;
   }
 
@@ -639,5 +637,216 @@ footer {
 
   .copy {
     white-space: normal;
+  }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .header-nav-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 20px;
+    margin-right: 250px;
+  }
+
+  .nav-button {
+    margin: 0;
+    max-width: none;
+  }
+
+  .nav-menus {
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .banner-container {
+    flex-direction: row;
+  }
+
+  .banner-inside-text,
+  .banner-text {
+    margin: 0 15px;
+  }
+  .banner-img img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 400px; 
+  }
+
+  .banner-content {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .banner-inside-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .btnS,
+  .btnG {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .card-section {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .game-image-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .card {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .watch-text {
+    font-size: 12px;
+  }
+
+  .card-image-text {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .text-center {
+    font-size: 3rem;
+  }
+
+  .rectangle-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .rectangle-section h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .rectangle-section span {
+    background: #f948b2;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .rectangle-section p {
+    width: 100%;
+    color: #534c64;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+  }
+
+  .ractangle-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  .ractangle-img img {
+    max-width: 100%;
+    height: -250px;
+    border-radius: 8px;
+    border: 8px solid #fff;
+    background: lightgray;
+    margin-right: 100px;
+  }
+
+  .game-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 45px;
+    padding: 50px;
+    margin-bottom: 100px;
+    margin-left: 15px;
+  }
+
+  .box-arcade {
+    width: 100%;
+    font-size: 1.25rem;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: #fff;
+  }
+
+  .box {
+    font-size: 1.25rem;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+  .box-arcade {
+    border: 1.5px solid #fb0b87;
+  }
+
+  .box,
+  .box-arcade {
+    max-width: 100%;
+  }
+
+  .nav-logo-footer {
+    margin: 50px auto;
+  }
+
+  .footer-nav .nav-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .another-nav .nav-list {
+    gap: 20px;
   }
 }
